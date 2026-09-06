@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Price<span>Pro</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#features">Features</a>
+        </nav>
+
+        <button class="contact-btn" onclick="contactUs()">
+            Contact
+        </button>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <p class="small-title">SIMPLE & FLEXIBLE PRICING</p>
+
+        <h1>Choose the Perfect Plan<br>for Your Needs</h1>
+
+        <p class="description">
+            Start for free and upgrade whenever you need.
+            Choose a plan that works best for you.
+        </p>
+
+        <!-- Monthly / Yearly Toggle -->
+        <div class="billing-toggle">
+
+            <span id="monthlyText" class="active">
+                Monthly
+            </span>
+
+            <label class="switch">
+                <input type="checkbox" id="billingToggle">
+                <span class="slider"></span>
+            </label>
+
+            <span id="yearlyText">
+                Yearly
+            </span>
+
+            <span class="save">
+                Save 20%
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+
+        <!-- Basic Plan -->
+        <div class="pricing-card">
+
+            <div class="card-header">
+                <h2>Basic</h2>
+
+                <p>
+                    Perfect for individuals getting started.
+                </p>
+            </div>
+
+            <div class="price">
+                <span class="currency">₹</span>
+                <span class="amount" data-monthly="0" data-yearly="0">0</span>
+                <span class="period">/month</span>
+            </div>
+
+            <button class="plan-btn" onclick="selectPlan('Basic')">
+                Get Started
+            </button>
+
+            <div class="features">
+                <h3>What's included:</h3>
+
+                <p>✓ 1 User</p>
+                <p>✓ 5 Projects</p>
+                <p>✓ 1 GB Storage</p>
+                <p>✓ Basic Support</p>
+                <p class="disabled">✕ Advanced Analytics</p>
+                <p class="disabled">✕ Priority Support</p>
+            </div>
+
+        </div>
+
+
+        <!-- Pro Plan -->
+        <div class="pricing-card popular">
+
+            <div class="popular-badge">
+                MOST POPULAR
+            </div>
+
+            <div class="card-header">
+                <h2>Professional</h2>
+
+                <p>
+                    Great for growing teams and businesses.
+                </p>
+            </div>
+
+            <div class="price">
+                <span class="currency">₹</span>
+                <span class="amount" data-monthly="499" data-yearly="399">499</span>
+                <span class="period">/month</span>
+            </div>
+
+            <button class="plan-btn primary" onclick="selectPlan('Professional')">
+                Choose Professional
+            </button>
+
+            <div class="features">
+                <h3>What's included:</h3>
+
+                <p>✓ 5 Users</p>
+                <p>✓ Unlimited Projects</p>
+                <p>✓ 20 GB Storage</p>
+                <p>✓ Email Support</p>
+                <p>✓ Advanced Analytics</p>
+                <p class="disabled">✕ Priority Support</p>
+            </div>
+
+        </div>
+
+
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+
+            <div class="card-header">
+                <h2>Premium</h2>
+
+                <p>
+                    Best for large teams and organizations.
+                </p>
+            </div>
+
+            <div class="price">
+                <span class="currency">₹</span>
+                <span class="amount" data-monthly="999" data-yearly="799">999</span>
+                <span class="period">/month</span>
+            </div>
+
+            <button class="plan-btn" onclick="selectPlan('Premium')">
+                Choose Premium
+            </button>
+
+            <div class="features">
+                <h3>What's included:</h3>
+
+                <p>✓ Unlimited Users</p>
+                <p>✓ Unlimited Projects</p>
+                <p>✓ 100 GB Storage</p>
+                <p>✓ 24/7 Support</p>
+                <p>✓ Advanced Analytics</p>
+                <p>✓ Priority Support</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="extra-features" id="features">
+
+        <h2>Why Choose PricePro?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-box">
+                <div class="icon">⚡</div>
+                <h3>Fast & Reliable</h3>
+                <p>
+                    Get a fast and reliable experience
+                    with our powerful platform.
+                </p>
+            </div>
+
+            <div class="feature-box">
+                <div class="icon">🔒</div>
+                <h3>Secure</h3>
+                <p>
+                    Your data is protected with modern
+                    security technologies.
+                </p>
+            </div>
+
+            <div class="feature-box">
+                <div class="icon">💬</div>
+                <h3>Great Support</h3>
+                <p>
+                    Our support team is always ready
+                    to help you.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 PricePro. All Rights Reserved to Bhagyasree Neeluri.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

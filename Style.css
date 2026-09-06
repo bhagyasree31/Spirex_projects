@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #635bff;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #635bff;
+}
+
+.contact-btn {
+    border: none;
+    background: #635bff;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.small-title {
+    color: #635bff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 600px;
+    margin: auto;
+    color: #687083;
+    line-height: 1.7;
+}
+
+
+/* ================= BILLING TOGGLE ================= */
+
+.billing-toggle {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.billing-toggle span {
+    color: #777;
+    font-weight: 600;
+}
+
+.billing-toggle .active {
+    color: #635bff;
+}
+
+.save {
+    background: #e7e5ff;
+    color: #635bff !important;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+/* Toggle */
+
+.switch {
+    position: relative;
+    width: 52px;
+    height: 28px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background: #635bff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 4px;
+    top: 4px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(24px);
+}
+
+
+/* ================= PRICING ================= */
+
+.pricing {
+    width: 85%;
+    max-width: 1150px;
+    margin: 30px auto 80px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.pricing-card {
+    background: white;
+    border: 1px solid #e5e7ef;
+    border-radius: 18px;
+    padding: 35px 30px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Popular Card */
+
+.pricing-card.popular {
+    border: 2px solid #635bff;
+    transform: scale(1.03);
+}
+
+.pricing-card.popular:hover {
+    transform: scale(1.03) translateY(-8px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #635bff;
+    color: white;
+
+    padding: 7px 18px;
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* Card Header */
+
+.card-header h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.card-header p {
+    color: #737b8c;
+    min-height: 45px;
+    line-height: 1.5;
+}
+
+
+/* Price */
+
+.price {
+    margin: 30px 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.currency {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.amount {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.period {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* Buttons */
+
+.plan-btn {
+    width: 100%;
+    padding: 14px;
+
+    border: 2px solid #635bff;
+    border-radius: 9px;
+
+    background: white;
+    color: #635bff;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.plan-btn:hover {
+    background: #635bff;
+    color: white;
+}
+
+.plan-btn.primary {
+    background: #635bff;
+    color: white;
+}
+
+.plan-btn.primary:hover {
+    background: #5048df;
+}
+
+
+/* Features */
+
+.features {
+    margin-top: 30px;
+}
+
+.features h3 {
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.features p {
+    margin: 14px 0;
+    color: #4d5566;
+    font-size: 14px;
+}
+
+.features .disabled {
+    color: #aeb3bd;
+}
+
+
+/* ================= EXTRA FEATURES ================= */
+
+.extra-features {
+    text-align: center;
+    padding: 70px 8%;
+    background: white;
+}
+
+.extra-features > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-box {
+    padding: 30px;
+    border: 1px solid #e5e7ef;
+    border-radius: 15px;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #737b8c;
+    line-height: 1.6;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #172033;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .pricing {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    .pricing-card.popular {
+        transform: scale(1);
+    }
+
+    .pricing-card.popular:hover {
+        transform: translateY(-8px);
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 20px 30px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .billing-toggle {
+        flex-wrap: wrap;
+    }
+
+    .pricing {
+        width: 90%;
+    }
+
+    .pricing-card {
+        padding: 30px 22px;
+    }
+
+    .extra-features {
+        padding: 60px 5%;
+    }
+}
