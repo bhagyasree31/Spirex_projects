@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="shoppingCart.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🛍️ My Shopping Store</h1>
+
+        <button class="cart-button" onclick="showCart()">
+            🛒 Cart (<span id="cartCount">0</span>)
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <h2>Our Products</h2>
+
+        <div id="productList" class="product-list"></div>
+
+
+        <section id="cartSection" class="cart-section">
+
+            <h2>🛒 Shopping Cart</h2>
+
+            <div id="cartItems"></div>
+
+            <div class="cart-total">
+
+                <h3>
+                    Total:
+                    ₹<span id="totalPrice">0</span>
+                </h3>
+
+                <button onclick="clearCart()" class="clear-button">
+                    Clear Cart
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="shoppingCart.js"></script>
+
+</body>
+</html>

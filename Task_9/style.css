@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.total-box {
+    margin-top: 25px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.total-box h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.total-box p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.expense-list {
+    margin-top: 25px;
+}
+
+.expense-list h2 {
+    margin-bottom: 15px;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #777;
+    padding: 15px;
+}
+
+#expenseList {
+    list-style: none;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background-color: #fafafa;
+}
+
+.expense-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.expense-name {
+    font-weight: bold;
+}
+
+.expense-amount {
+    color: #555;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .expense-item {
+        gap: 10px;
+    }
+
+    .expense-name {
+        font-size: 15px;
+    }
+
+    .expense-amount {
+        font-size: 14px;
+    }
+}
